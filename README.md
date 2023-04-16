@@ -1,4 +1,4 @@
-# Test Task for front-end developer from კლიპარტი • ClipArt
+# Task for front-end developer from კლიპარტი • ClipArt
 
 ### Links
 
