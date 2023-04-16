@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "FiraGo";
+    src: url("../assets/fonts/FiraGO-Regular.woff") format("woff"),
+      url("../assets/fonts/FiraGO-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "FiraGo";
+    src: url("../assets/fonts/FiraGO-Medium.woff") format("woff"),
+      url("../assets/fonts/FiraGO-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "FiraGo";
+    src: url("../assets/fonts/FiraGO-SemiBold.woff") format("woff"),
+      url("../assets/fonts/FiraGO-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply mx-auto max-w-[328px] lg:max-w-[928px] lg1:max-w-[1128px] 3xl:max-w-[1312px];
+  }
+}
+
+/* max-w-[328px] lg:max-w-[928px] lg1:max-w-[1128px] 3xl:max-w-[1312px] */
+
+/* justify-center grid grid-cols-4/64 gap-x-6 lg:grid-cols-8/88 lg:gap-x-8 lg1:grid-cols-12/72 lg1:gap-x-6 3xl:grid-cols-12/80 3xl:gap-x-8 */
