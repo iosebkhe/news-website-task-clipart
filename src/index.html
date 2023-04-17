@@ -5,12 +5,266 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/output.css" />
+    <script src="./js/script.js" defer></script>
     <title>Test Task</title>
   </head>
-  <body class="bg-brand-gray-200">
-    <header class="bg-red-600">Hello</header>
-    <main class="bg-blue-400 wrapper">
-      <div>Hello</div>
+  <body class="bg-brand-gray-200 font-FiraGo text-brand-body-text">
+    <!-- Header -->
+    <header id="header" class="bg-white">
+      <!-- Header: logo, search and mobile menu icon -->
+      <div class="wrapper">
+        <div class="flex justify-between items-center py-3 lg:py-4">
+          <!-- Social icons -->
+          <div
+            class="hidden lg1:flex lg1:gap-2 lg1:items-center lg1:text-brand-gray-300"
+          >
+            <!-- Facebook icon -->
+            <a href="#" target="_blank">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="40" height="40" rx="8" fill="currentColor" />
+                <path
+                  d="M23.6987 12.0033L21.7799 12C19.6242 12 18.231 13.5455 18.231 15.9376V17.7531H16.3017C16.135 17.7531 16 17.8993 16 18.0795V20.71C16 20.8903 16.1352 21.0363 16.3017 21.0363H18.231V27.6738C18.231 27.854 18.366 28 18.5327 28H20.6983C20.865 28 21 27.8539 21 27.6738V21.0363H23.6075C23.7742 21.0363 23.9092 20.8903 23.9092 20.71L23.9101 18.0795C23.9101 17.993 23.8782 17.9101 23.8217 17.8488C23.7652 17.7876 23.6883 17.7531 23.6082 17.7531H21V16.2141C21 15.4744 21.5147 15.0989 22.4058 15.0989L23.6984 15.0984C23.865 15.0984 24 14.9522 24 14.7721V12.3296C24 12.1496 23.8652 12.0037 23.6987 12.0033Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+            <!-- Twitter icon -->
+            <a href="#" target="_blank">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="40" height="40" rx="8" fill="currentColor" />
+                <path
+                  d="M28 15.039C27.405 15.3 26.771 15.473 26.11 15.557C26.79 15.151 27.309 14.513 27.553 13.744C26.919 14.122 26.219 14.389 25.473 14.538C24.871 13.897 24.013 13.5 23.077 13.5C21.261 13.5 19.799 14.974 19.799 16.781C19.799 17.041 19.821 17.291 19.875 17.529C17.148 17.396 14.735 16.089 13.114 14.098C12.831 14.589 12.665 15.151 12.665 15.756C12.665 16.892 13.25 17.899 14.122 18.482C13.595 18.472 13.078 18.319 12.64 18.078C12.64 18.088 12.64 18.101 12.64 18.114C12.64 19.708 13.777 21.032 15.268 21.337C15.001 21.41 14.71 21.445 14.408 21.445C14.198 21.445 13.986 21.433 13.787 21.389C14.212 22.688 15.418 23.643 16.852 23.674C15.736 24.547 14.319 25.073 12.785 25.073C12.516 25.073 12.258 25.061 12 25.028C13.453 25.965 15.175 26.5 17.032 26.5C23.068 26.5 26.368 21.5 26.368 17.166C26.368 17.021 26.363 16.881 26.356 16.742C27.007 16.28 27.554 15.703 28 15.039Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+            <!-- Instagram icon -->
+            <a href="#" target="_blank">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="40" height="40" rx="8" fill="currentcolor" />
+                <path
+                  d="M23.6689 12H16.3311C13.9429 12 12 13.9429 12 16.3311V23.6691C12 26.0571 13.9429 28 16.3311 28H23.6691C26.0571 28 28 26.0571 28 23.6691V16.3311C28 13.9429 26.0571 12 23.6689 12V12ZM20 24.3749C17.5876 24.3749 15.6251 22.4124 15.6251 20C15.6251 17.5876 17.5876 15.6251 20 15.6251C22.4124 15.6251 24.3749 17.5876 24.3749 20C24.3749 22.4124 22.4124 24.3749 20 24.3749ZM24.4795 16.6569C23.7666 16.6569 23.1868 16.077 23.1868 15.3641C23.1868 14.6512 23.7666 14.0713 24.4795 14.0713C25.1924 14.0713 25.7723 14.6512 25.7723 15.3641C25.7723 16.077 25.1924 16.6569 24.4795 16.6569Z"
+                  fill="black"
+                />
+                <path
+                  d="M19.9999 17.0909C18.3959 17.0909 17.0908 18.3959 17.0908 20C17.0908 21.604 18.3959 22.9091 19.9999 22.9091C21.604 22.9091 22.909 21.604 22.909 20C22.909 18.3959 21.604 17.0909 19.9999 17.0909Z"
+                  fill="black"
+                />
+                <path
+                  d="M24.4797 15.0094C24.2842 15.0094 24.125 15.1686 24.125 15.3641C24.125 15.5597 24.2842 15.7189 24.4797 15.7189C24.6754 15.7189 24.8346 15.5598 24.8346 15.3641C24.8346 15.1685 24.6754 15.0094 24.4797 15.0094Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+          </div>
+          <!-- Company Logo -->
+          <p
+            class="text-brand-red-500 text-brand-logo-text lg:text-[24px] lg1:text-[28px]"
+          >
+            Company Logo
+          </p>
+          <!-- Search and Menu buttons -->
+          <div class="flex items-center gap-3 lg:gap-4 lg1:gap-0">
+            <!-- Search -->
+            <label for="searchInput" class="relative">
+              <input
+                type="text"
+                name="searchInput"
+                id="searchInput"
+                placeholder="ძიება..."
+                class="invisible w-28 h-12 bg-brand-gray-300 block text-brand-header-text text-brand-gray-500 placeholder:text-brand-gray-500 placeholder:text-brand-header-text rounded-lg1 pl-[11px] pr-1 focus-visible:outline-brand-gray-500 border-none lg:visible lg:w-[216px] lg:pl-4 lg1:w-[220px] 3xl:w-[304px]"
+              />
+              <!-- Search icon -->
+              <span
+                class="bg-brand-gray-300 absolute right-1 top-1 rounded-lg1 cursor-pointer lg:bg-white text-black lg:text-brand-gray-500"
+              >
+                <svg
+                  class="p-3"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_9_1209)">
+                    <circle
+                      cx="7.58824"
+                      cy="7.58824"
+                      r="6.58824"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.5295 12.5294L15.0001 15"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_9_1209">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+            </label>
+            <!-- Mobile Menu Icon -->
+            <button
+              id="mob-menu-btn"
+              class="lg1:hidden text-brand-gray-300 focus-visible:outline-brand-gray-500 z-50 drop-shadow-sm overflow-hidden"
+            >
+              <svg
+                class="w-10 h-10 lg:w-12 lg:h-12"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="48" height="48" rx="8" fill="currentColor" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15 20V18H33V20H15ZM15 25H33V23H15V25ZM15 30H33V28H15V30Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Header: navigation -->
+      <nav
+        id="header-nav"
+        class="bg-brand-gray-400 fixed top-0 bottom-0 right-0 left-0 min-h-screen flex justify-center z-40 translate-x-full transition-transform duration-500 lg1:transition-none lg1:translate-x-0 lg1:z-0 lg1:static lg1:block lg1:min-h-0"
+      >
+        <ul
+          id="nav-items"
+          class="flex flex-col justify-center items-center gap-4 text-brand-header-text lg1:wrapper lg1:flex-row lg1:gap-0 lg1:justify-between lg1:relative"
+        >
+          <li class="">
+            <a
+              href="#"
+              class="smooth-transition text-brand-gray-500 hover:opacity-80 pointer"
+            >
+              პოლიტიკა
+            </a>
+          </li>
+
+          <li class="">
+            <a
+              href="#"
+              class="smooth-transition text-brand-gray-500 hover:opacity-80"
+            >
+              საზოგადოება
+            </a>
+          </li>
+
+          <li class="">
+            <a
+              href="#"
+              class="smooth-transition text-brand-gray-500 hover:opacity-80"
+            >
+              Covid-19
+            </a>
+          </li>
+
+          <li class="">
+            <a
+              href="#"
+              class="smooth-transition text-brand-gray-500 hover:opacity-80"
+            >
+              სამართალი
+            </a>
+          </li>
+
+          <li class="">
+            <a
+              href="#"
+              class="smooth-transition text-brand-gray-500 hover:opacity-80"
+            >
+              ბიზნესი & ეკონომიკა
+            </a>
+          </li>
+
+          <li class="">
+            <a
+              href="#"
+              class="smooth-transition text-brand-gray-500 hover:opacity-80"
+            >
+              კრიმინალი
+            </a>
+          </li>
+
+          <li class="">
+            <a
+              href="#"
+              class="smooth-transition text-brand-gray-500 hover:opacity-80"
+            >
+              შემთხვევა
+            </a>
+          </li>
+
+          <li class="">
+            <a
+              href="#"
+              class="smooth-transition text-brand-gray-500 hover:opacity-80"
+            >
+              მსოფლიო
+            </a>
+          </li>
+
+          <li class="">
+            <a
+              href="#"
+              class="smooth-transition text-brand-gray-500 hover:opacity-80"
+            >
+              სპორტი
+            </a>
+          </li>
+
+          <li class="">
+            <a
+              href="#"
+              class="smooth-transition text-brand-gray-500 hover:opacity-80"
+            >
+              რელიგია
+            </a>
+          </li>
+
+          <li class="">
+            <a
+              href="#"
+              class="smooth-transition text-brand-gray-500 hover:opacity-80"
+            >
+              ხელოვნება
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="wrapper bg-yellow-300">
+      <div class="bg-blue-400">Hello</div>
     </main>
   </body>
 </html>

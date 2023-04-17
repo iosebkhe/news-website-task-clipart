@@ -52,7 +52,7 @@ module.exports = {
           "1.5rem", //24px
           {
             lineHeight: "2.5rem", //40px
-            letterSpacing: "0.022rem", //0.35px
+            letterSpacing: "0.021875rem", //0.35px
             fontWeight: "600", //SemiBold
           },
         ],
@@ -61,7 +61,7 @@ module.exports = {
           "1rem", //16px
           {
             lineHeight: "1.5rem", //24px
-            letterSpacing: "0.022rem", //0.35px
+            letterSpacing: "0.0219rem", //0.35px
             fontWeight: "600", //SemiBold
           },
         ],
@@ -70,8 +70,17 @@ module.exports = {
           "0.813rem", //13px
           {
             lineHeight: "1.125rem", //18px
-            letterSpacing: "0.013rem", //0.20px
+            letterSpacing: "0.0125rem", //0.20px
             fontWeight: "500", //Medium
+          },
+        ],
+
+        "brand-logo-text": [
+          "1rem", //16px
+          {
+            lineHeight: "2.125rem", //34px
+            letterSpacing: "0.0225rem", //0.36px
+            fontWeight: "600", //SemiBold
           },
         ],
 
@@ -88,7 +97,7 @@ module.exports = {
           "1rem", //16px
           {
             lineHeight: "1.5rem", //24px
-            letterSpacing: "0.031rem", //0.5px
+            letterSpacing: "0.03125rem", //0.5px
             fontWeight: "400", //Regular
           },
         ],
@@ -97,7 +106,7 @@ module.exports = {
           "0.75rem", //12px
           {
             lineHeight: "1rem", //16px
-            letterSpacing: "0.013rem", //0.20px
+            letterSpacing: "0.0125rem", //0.20px
             fontWeight: "400", //Regular
           },
         ],
@@ -132,6 +141,13 @@ module.exports = {
       boxShadow: {
         big: "0px 0px 40px rgba(0, 0, 0, 0.12)",
         small: "0px 0px 20px rgba(0, 0, 0, 0.1)",
+      },
+      dropShadow: {
+        big: "0px 0px 40px rgba(0, 0, 0, 0.12)",
+        small: "0px 0px 20px rgba(0, 0, 0, 0.1)",
+      },
+      borderRadius: {
+        lg1: "0.625rem", //10px
       },
     },
   },
