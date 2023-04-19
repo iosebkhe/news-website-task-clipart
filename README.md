@@ -2,7 +2,7 @@
 
 ### Links
 
-- Live Site URL: [Click here](https://randompass-iosebkhe.netlify.app/)
+- Live Site URL: [Click here](https://news-iosebkhe.netlify.app/)
 
 ### Created with
 
