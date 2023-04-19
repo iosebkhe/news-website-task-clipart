@@ -77,7 +77,7 @@ const createDropdownUl = function () {
 
 <ul id="dropdown" class="bg-white absolute top-[52px] -right-5 flex flex-col gap-6
 justify-center py-6 pl-4 pr-[74px] rounded-lg drop-shadow-small opacity-0
-invisible pointer-events-none smooth-transition group-hover/dropdown:opacity-100 group-hover/dropdown:visible group-hover/dropdown:pointer-events-auto" >
+invisible pointer-events-none smooth-transition group-hover/dropdown:opacity-100 group-hover/dropdown:visible group-hover/dropdown:pointer-events-auto " >
 
 </ul>
 </li>`;
