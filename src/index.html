@@ -15,16 +15,16 @@
     <title>Test Task</title>
   </head>
   <body class="bg-brand-gray-200 font-FiraGo text-brand-body-text">
-    <!-- Header -->
+    <!-- ჰედერი -->
     <header id="header" class="bg-white">
-      <!-- Header: logo, search and mobile menu icon -->
-      <div class="px-4 sm:px-12 md:px-14 lg:px-0 lg:wrapper">
+      <!-- ჰედერი: ძებნა, ლოგო და მობილური ნავიგაციის ღილაკი -->
+      <div class="wrapper">
         <div class="flex justify-between items-center py-3 lg:py-4">
-          <!-- Social icons -->
+          <!-- სოციალური ქსელების აიქონები -->
           <div
             class="hidden lg1:flex lg1:gap-2 lg1:items-center lg1:text-brand-gray-300"
           >
-            <!-- Facebook icon -->
+            <!-- Facebook -->
             <a href="#" target="_blank">
               <svg
                 width="40"
@@ -40,7 +40,7 @@
                 />
               </svg>
             </a>
-            <!-- Twitter icon -->
+            <!-- Twitter -->
             <a href="#" target="_blank">
               <svg
                 width="40"
@@ -56,7 +56,7 @@
                 />
               </svg>
             </a>
-            <!-- Instagram icon -->
+            <!-- Instagram -->
             <a href="#" target="_blank">
               <svg
                 width="40"
@@ -81,22 +81,22 @@
               </svg>
             </a>
           </div>
-          <!-- Company Logo -->
+          <!-- კომპანიის ლოგო -->
           <p
             class="text-brand-red-500 text-brand-logo-text lg:text-[24px] lg1:text-[28px]"
           >
             Company Logo
           </p>
-          <!-- Search and Menu buttons -->
+          <!-- ძებნის და ნავიგაციის ღილაკები -->
           <div class="flex items-center gap-3 lg:gap-4 lg1:gap-0">
-            <!-- Search -->
+            <!-- ძებნა -->
             <label for="searchInput" class="relative">
               <input
                 type="text"
                 name="searchInput"
                 id="searchInput"
                 placeholder="ძიება..."
-                class="invisible w-28 h-12 bg-brand-gray-300 block text-brand-header-text text-brand-gray-500 placeholder:text-brand-gray-500 placeholder:text-brand-header-text rounded-lg1 pl-[11px] pr-1 focus-visible:outline-brand-gray-500 border-none lg:visible lg:w-[216px] lg:pl-4 lg1:w-[220px] 3xl:w-[304px]"
+                class="invisible w-28 h-12 bg-brand-gray-300 block text-brand-header-text text-brand-gray-500 placeholder:text-brand-gray-500 placeholder:text-brand-14/20 lg:placeholder:text-brand-header-text rounded-lg1 pl-[11px] pr-1 focus-visible:outline-brand-gray-500 border-none lg:visible lg:w-[216px] lg:pl-4 lg1:w-[220px] 3xl:w-[304px]"
               />
               <!-- Search icon -->
               <span
@@ -136,7 +136,7 @@
                 </svg>
               </span>
             </label>
-            <!-- Mobile Menu Icon -->
+            <!-- მობილური ნავიგაციის ღილაკი -->
             <button
               id="mob-menu-btn"
               class="lg1:hidden text-brand-gray-300 focus-visible:outline-brand-gray-500 z-50 drop-shadow-sm overflow-hidden"
@@ -159,7 +159,7 @@
           </div>
         </div>
       </div>
-      <!-- Header: navigation -->
+      <!-- ჰედერი: ნავიგაცია -->
       <nav
         id="header-nav"
         class="bg-brand-gray-400 fixed top-0 bottom-0 right-0 left-0 min-h-screen flex justify-center z-40 translate-x-full transition-transform duration-500 lg1:transition-none lg1:translate-x-0 lg1:z-0 lg1:static lg1:block lg1:min-h-0"
@@ -168,117 +168,20 @@
           id="nav-items"
           class="flex flex-col justify-center items-center gap-4 text-brand-header-text lg1:wrapper lg1:flex-row lg1:gap-0 lg1:justify-between lg1:relative"
         >
-          <!-- <li class="">
-            <a
-              href="#"
-              class="smooth-transition text-brand-gray-500 hover:opacity-80 pointer"
-            >
-              პოლიტიკა
-            </a>
-          </li>
-
-          <li class="">
-            <a
-              href="#"
-              class="smooth-transition text-brand-gray-500 hover:opacity-80"
-            >
-              საზოგადოება
-            </a>
-          </li>
-
-          <li class="">
-            <a
-              href="#"
-              class="smooth-transition text-brand-gray-500 hover:opacity-80"
-            >
-              Covid-19
-            </a>
-          </li>
-
-          <li class="">
-            <a
-              href="#"
-              class="smooth-transition text-brand-gray-500 hover:opacity-80"
-            >
-              სამართალი
-            </a>
-          </li>
-
-          <li class="">
-            <a
-              href="#"
-              class="smooth-transition text-brand-gray-500 hover:opacity-80"
-            >
-              ბიზნესი & ეკონომიკა
-            </a>
-          </li>
-
-          <li class="">
-            <a
-              href="#"
-              class="smooth-transition text-brand-gray-500 hover:opacity-80"
-            >
-              კრიმინალი
-            </a>
-          </li>
-
-          <li class="">
-            <a
-              href="#"
-              class="smooth-transition text-brand-gray-500 hover:opacity-80"
-            >
-              შემთხვევა
-            </a>
-          </li>
-
-          <li class="">
-            <a
-              href="#"
-              class="smooth-transition text-brand-gray-500 hover:opacity-80"
-            >
-              მსოფლიო
-            </a>
-          </li>
-
-          <li class="">
-            <a
-              href="#"
-              class="smooth-transition text-brand-gray-500 hover:opacity-80"
-            >
-              სპორტი
-            </a>
-          </li>
-
-          <li class="">
-            <a
-              href="#"
-              class="smooth-transition text-brand-gray-500 hover:opacity-80"
-            >
-              რელიგია
-            </a>
-          </li>
-
-          <li class="">
-            <a
-              href="#"
-              class="smooth-transition text-brand-gray-500 hover:opacity-80"
-            >
-              ხელოვნება
-            </a>
-          </li> -->
+          <!--  -->
+          <!-- აქ დარენდერდება სია ჯავასკრიპტით. -->
+          <!--  -->
         </ul>
       </nav>
     </header>
-    <main class="">
-      <!-- Slider Section -->
-      <section
-        class="mb-12 sm:px-12 md:px-14 relative lg:px-0 lg:wrapper lg:mt-8 lg:mb-16 3xl:mt-12"
-      >
-        <!-- Slider -->
-        <div class="swiper lg1:!z-auto">
+    <main>
+      <!-- სლაიდერის სექცია -->
+      <section class="mb-12 relative sm:wrapper lg:mt-8 lg:mb-16 3xl:mt-12">
+        <!-- სლაიდერი -->
+        <div class="swiper lg:rounded-lg lg1:!z-auto">
           <div class="swiper-wrapper !h-[280px] lg:!h-auto">
-            <!-- Slide N1 -->
-            <div class="swiper-slide sm:rounded-lg overflow-hidden">
+            <!-- სლაიდი N1 -->
+            <div class="swiper-slide">
               <picture>
                 <source
                   srcset="
@@ -297,14 +200,14 @@
                   media="(min-width: 320px)"
                 />
                 <img
-                  class="h-full w-full lg:h-auto lg:w-auto"
+                  class="h-full w-full lg:h-auto lg:w-auto object-cover"
                   src="./assets/images/SliderImages/Photo-13-min.png"
                   alt="the night sky with stars above a mountain range"
                 />
               </picture>
             </div>
-            <!-- Slide N2 -->
-            <div class="swiper-slide sm:rounded-lg overflow-hidden">
+            <!-- სლაიდი N2 -->
+            <div class="swiper-slide">
               <picture>
                 <source
                   srcset="
@@ -323,14 +226,14 @@
                   media="(min-width: 320px)"
                 />
                 <img
-                  class="h-full w-full lg:h-auto lg:w-auto"
+                  class="h-full w-full lg:h-auto lg:w-auto object-cover"
                   src="./assets/images/SliderImages/Photo-16-min.png"
                   alt="the night sky with stars above a mountain range"
                 />
               </picture>
             </div>
-            <!-- Slide N3 -->
-            <div class="swiper-slide sm:rounded-lg overflow-hidden">
+            <!-- სლაიდი N3 -->
+            <div class="swiper-slide">
               <picture>
                 <source
                   srcset="
@@ -349,14 +252,14 @@
                   media="(min-width: 320px)"
                 />
                 <img
-                  class="h-full w-full lg:h-auto lg:w-auto"
+                  class="h-full w-full lg:h-auto lg:w-auto object-cover"
                   src="./assets/images/SliderImages/Photo-14-min.png"
                   alt="the night sky with stars above a mountain range"
                 />
               </picture>
             </div>
-            <!-- Slide N4 -->
-            <div class="swiper-slide sm:rounded-lg overflow-hidden">
+            <!-- სლაიდი N4 -->
+            <div class="swiper-slide">
               <picture>
                 <source
                   srcset="
@@ -375,17 +278,18 @@
                   media="(min-width: 320px)"
                 />
                 <img
-                  class="h-full w-full lg:h-auto lg:w-auto"
+                  class="h-full w-full lg:h-auto lg:w-auto object-cover"
                   src="./assets/images/SliderImages/Photo-15-min.png"
                   alt="the night sky with stars above a mountain range"
                 />
               </picture>
             </div>
           </div>
-          <!-- Slider buttons container -->
+          <!-- სლაიდერის ღილაკების კონტეინერი -->
           <div
             class="absolute top-0 right-0 bottom-0 left-0 flex justify-between items-center px-4 bg-brand-gray-300 lg:bottom-auto lg:right-auto lg:justify-normal lg:gap-4 lg:z-50 lg:mt-6 lg:ml-6 lg:p-2 lg:rounded-lg1 lg1:bottom-0 lg1:left-0 lg1:right-auto lg1:top-auto lg1:mt-0 lg1:ml-12 lg1:mb-14 lg1:gap-3"
           >
+            <!-- სლაიდერის მარცხნივ მამოძრავებელი ღილაკი -->
             <button
               class="swiper-button-prev !bg-white !w-8 !h-8 !flex !justify-center !items-center !rounded-lg !mt-0 !text-brand-gray-500 !static lg1:!bg-transparent lg1:!w-6 lg1:!h-6"
             >
@@ -402,12 +306,14 @@
                 />
               </svg>
             </button>
+            <!-- სლაიდების რაოდენობის მაჩვენებელი -->
             <div
               id="slide-count"
               class="hidden lg:text-brand-headline-2 lg:block"
             >
               1/4
             </div>
+            <!-- სლაიდერის მარჯვნივ მამოძრავებელი ღილაკი  -->
             <button
               class="swiper-button-next !bg-white !w-8 !h-8 !flex !justify-center !items-center !rounded-lg !mt-0 !text-brand-gray-500 !static lg1:!bg-transparent lg1:!w-6 lg1:!h-6"
             >
@@ -427,23 +333,166 @@
             </button>
           </div>
         </div>
-        <!-- Slider content -->
-        <div
+        <!-- სლაიდერის კონტენტი -->
+        <article
           class="bg-white p-4 lg:rounded-lg1 lg:overflow-hidden lg:absolute lg:bottom-0 lg:left-0 lg:wrapper lg:p-6 lg:mx-6 lg:mb-6 lg:z-50 lg1:z-40 lg1:pt-8 lg1:pb-[104px] 3xl:w-[600px] 3xl:mr-0 3xl:pt-[29px] 3xl:pr-[23px] 3xl:pb-[101px]"
         >
-          <p class="text-brand-footnote">
+          <div
+            class="flex items-center gap-2 text-brand-gray-500 leading-[18px]"
+          >
             <span class="text-brand-footnote-semiBold text-brand-red-500"
               >პოლიტიკა</span
             >
-            • 18.03.2024
-          </p>
+            <span>•</span>
+            <time
+              class="text-brand-footnote text-brand-gray-500"
+              datetime="2024-03-18"
+              >18.03.2024</time
+            >
+          </div>
           <h1
             class="text-brand-headline-2 mt-2 lg:text-brand-headline-1 lg:mt-3"
           >
             ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების სამელიორაციო
             ინფრასტრუქტურული პროექტები დაიწყება
           </h1>
-        </div>
+        </article>
+      </section>
+
+      <!-- სხვა დანარჩენი სტატიების სექცია -->
+      <!-- სტატიების პატარა კონტეინერებს დესკტოპებზე სათაური მხოლოდ ორ ხაზზე უჩანთ. ეგ შემეძლო line-clamp-ით გამეკეთებინა მაგრამ იმ სათაურებს რომელსაც ორ ხაზზე მეტი სჭირდებოდათ ბოლოში უჩნდებოდათ 3 წერტილი და არ ჩანდა ლამაზად, ამიტომ დიზაინში როგორცაა ზუსტად ისე, რომ გამეკეთებინა დამჭირდა სიმაღლის სტატიკურად გაწერა -->
+      <section
+        class="wrapper flex flex-col gap-4 mb-14 lg:grid lg:grid-cols-8/88 lg:justify-center lg:gap-8 lg:mb-[140px] lg1:grid-cols-12/72 lg1:gap-x-6 lg1:gap-y-[31px] lg1:grid-rows-2 lg1:mb-[211px] 3xl:grid-cols-12/80 3xl:gap-x-8 3xl:mb-[135px]"
+      >
+        <!-- მთავარი დიდი სტატიის კონტეინერი -->
+        <article
+          class="bg-white shadow-big rounded-xl lg:col-span-full lg1:col-start-4 lg1:col-end-10 lg1:row-span-2"
+        >
+          <img
+            class="w-full h-[181px] object-cover border-2 border-white rounded-xl lg:h-[372px] lg1:h-[352px] 3xl:h-[356px]"
+            src="./assets/images/First Section/Photo-3.png"
+            alt=""
+          />
+          <!-- სტატიის სათაური და გამოქვეყნების დრო -->
+          <header class="p-4 lg:py-6 lg1:py-8">
+            <h2 class="text-brand-headline-2">
+              ჩრდილოეთ კორეამ აშშ-სა და სამხრეთ კორეის წინააღმდეგ იმიტირებული
+              ბირთვული კონტრშეტევა დაიწყო
+            </h2>
+          </header>
+          <hr class="bg-brand-gray-500" />
+          <div class="p-4 flex justify-between items-center">
+            <span class="text-brand-headline-3 text-brand-red-500"
+              >ახალი ამბები</span
+            >
+            <time
+              class="text-brand-footnote lg:text-brand-small-text text-brand-gray-500"
+              datetime="2024-03-18"
+              >18.03.2024</time
+            >
+          </div>
+        </article>
+
+        <!-- სხვა პატარა ზომის სტატიები -->
+        <!-- სტატია 1 -->
+        <article
+          class="bg-white shadow-small rounded-xl lg:col-span-4 lg1:col-start-1 lg1:col-end-4 lg1:row-start-1"
+        >
+          <img
+            class="w-full h-[140px] object-cover border-2 border-white rounded-xl lg:h-[194px] lg1:h-[150px]"
+            src="./assets/images/First Section/Photo-5.png"
+            alt=""
+          />
+          <!-- სტატიის სათაური და დამატების თარიღი -->
+          <div class="pt-3 pb-4 pr-1 pl-3 lg:py-3 lg1:py-4 lg1:px-3">
+            <span
+              class="text-brand-small-text text-brand-gray-500 flex items-center gap-1"
+            >
+              <span>პოლიტიკა</span>
+              <span>•</span>
+              <time datetime="2022-03-18">18.03.2022</time>
+            </span>
+
+            <h3 class="text-brand-headline-3 mt-2 lg1:h-9 lg1:overflow-hidden">
+              კიმ ჩენ ინი აშშ-სა და სამხრეთ კორეას ბირთვული იარაღით ემუქრება
+            </h3>
+          </div>
+        </article>
+
+        <!-- სტატია 2 -->
+        <article
+          class="bg-white shadow-small rounded-xl lg:col-span-4 lg1:col-start-1 lg1:col-end-4 lg1:row-start-2"
+        >
+          <img
+            class="w-full h-[140px] object-cover border-2 border-white rounded-xl lg:h-[194px] lg1:h-[150px]"
+            src="./assets/images/First Section/Photo-4.png"
+            alt=""
+          />
+
+          <!-- სტატიის სათაური და დამატების თარიღი -->
+          <div class="pt-3 pb-4 pr-1 pl-3 lg:py-3 lg1:py-4 lg1:px-3">
+            <span
+              class="text-brand-small-text text-brand-gray-500 flex items-center gap-1"
+            >
+              <span>პოლიტიკა</span>
+              <span>•</span>
+              <time datetime="2022-03-18">18.03.2022</time>
+            </span>
+            <h3 class="text-brand-headline-3 mt-2 lg1:h-9 lg1:overflow-hidden">
+              საქართველოს მორაგბეთა ნაკრები „რაგბი ევროპის“ გამარჯვებულია
+            </h3>
+          </div>
+        </article>
+
+        <!-- სტატია 3 -->
+        <article
+          class="bg-white shadow-small rounded-xl lg:col-span-4 lg1:col-start-10 lg1:col-end-13 lg1:row-start-1"
+        >
+          <img
+            class="w-full h-[140px] object-cover border-2 border-white rounded-xl lg:h-[194px] lg1:h-[150px]"
+            src="./assets/images/First Section/Photo-2.png"
+            alt=""
+          />
+
+          <!-- სტატიის სათაური და დამატების თარიღი -->
+          <div class="pt-3 pb-4 pr-1 pl-3 lg:py-3 lg1:py-4 lg1:px-3">
+            <span
+              class="text-brand-small-text text-brand-gray-500 flex items-center gap-1"
+            >
+              <span>პოლიტიკა</span>
+              <span>•</span>
+              <time datetime="2022-03-18">18.03.2022</time>
+            </span>
+            <h3 class="text-brand-headline-3 mt-2 lg1:h-9 lg1:overflow-hidden">
+              დღეს კიბოს სკრინინგის მხარდასაჭერი კონცერტი გაიმართება
+            </h3>
+          </div>
+        </article>
+
+        <!-- სტატია 4 -->
+        <article
+          class="bg-white shadow-small rounded-xl lg:col-span-4 lg1:col-start-10 lg1:col-end-13 lg1:row-start-2"
+        >
+          <img
+            class="w-full h-[140px] object-cover border-2 border-white rounded-xl lg:h-[194px] lg1:h-[150px]"
+            src="./assets/images/First Section/Photo-1.png"
+            alt=""
+          />
+
+          <!-- სტატიის სათაური და დამატების თარიღი -->
+          <div class="pt-3 pb-4 pr-1 pl-3 lg:py-3 lg1:py-4 lg1:px-3">
+            <span
+              class="text-brand-small-text text-brand-gray-500 flex items-center gap-1"
+            >
+              <span>პოლიტიკა</span>
+              <span>•</span>
+              <time datetime="2022-03-18">18.03.2022</time>
+            </span>
+            <h3 class="text-brand-headline-3 mt-2 lg1:h-9 lg1:overflow-hidden">
+              უკრაინას დიდი კონტრშეტევისთვის მხოლოდ ერთი
+            </h3>
+          </div>
+        </article>
       </section>
     </main>
   </body>

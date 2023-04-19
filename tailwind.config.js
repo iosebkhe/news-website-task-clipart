@@ -61,13 +61,13 @@ module.exports = {
           "1rem", //16px
           {
             lineHeight: "1.5rem", //24px
-            letterSpacing: "0.0219rem", //0.35px
+            letterSpacing: "0.021875rem", //0.35px
             fontWeight: "600", //SemiBold
           },
         ],
 
         "brand-headline-3": [
-          "0.813rem", //13px
+          "0.8125rem", //13px
           {
             lineHeight: "1.125rem", //18px
             letterSpacing: "0.0125rem", //0.20px
@@ -102,10 +102,10 @@ module.exports = {
           },
         ],
 
-        "brand-sm": [
+        "brand-small-text": [
           "0.75rem", //12px
           {
-            lineHeight: "1rem", //16px
+            lineHeight: "1.125rem", //18px
             letterSpacing: "0.0125rem", //0.20px
             fontWeight: "400", //Regular
           },
@@ -139,11 +139,11 @@ module.exports = {
         ],
       },
       boxShadow: {
-        big: "0px 0px 40px rgba(0, 0, 0, 0.12)",
+        big: "0px 0px 40px rgba(0, 0, 0, 0.15)",
         small: "0px 0px 20px rgba(0, 0, 0, 0.1)",
       },
       dropShadow: {
-        big: "0px 0px 40px rgba(0, 0, 0, 0.12)",
+        big: "0px 0px 40px rgba(0, 0, 0, 0.15)",
         small: "0px 0px 20px rgba(0, 0, 0, 0.1)",
       },
       borderRadius: {
@@ -151,5 +151,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 };
