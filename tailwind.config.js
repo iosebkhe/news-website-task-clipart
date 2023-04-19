@@ -121,7 +121,7 @@ module.exports = {
         ],
 
         "brand-footnote": [
-          "0.813rem", //13px
+          "0.8125rem", //13px
           {
             lineHeight: "1.125rem", //18px
             letterSpacing: "-0.005rem", //-0.08px
@@ -130,7 +130,7 @@ module.exports = {
         ],
 
         "brand-footnote-semiBold": [
-          "0.813rem", //13px
+          "0.8125rem", //13px
           {
             lineHeight: "1.125rem", //18px
             letterSpacing: "-0.005rem", //-0.08px

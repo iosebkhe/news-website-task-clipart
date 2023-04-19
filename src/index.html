@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/script.js" defer></script>
     <title>Test Task</title>
   </head>
@@ -12,7 +18,7 @@
     <!-- Header -->
     <header id="header" class="bg-white">
       <!-- Header: logo, search and mobile menu icon -->
-      <div class="wrapper">
+      <div class="px-4 sm:px-12 md:px-14 lg:px-0 lg:wrapper">
         <div class="flex justify-between items-center py-3 lg:py-4">
           <!-- Social icons -->
           <div
@@ -162,7 +168,7 @@
           id="nav-items"
           class="flex flex-col justify-center items-center gap-4 text-brand-header-text lg1:wrapper lg1:flex-row lg1:gap-0 lg1:justify-between lg1:relative"
         >
-          <li class="">
+          <!-- <li class="">
             <a
               href="#"
               class="smooth-transition text-brand-gray-500 hover:opacity-80 pointer"
@@ -259,12 +265,186 @@
             >
               ხელოვნება
             </a>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </header>
-    <main class="wrapper bg-yellow-300">
-      <div class="bg-blue-400">Hello</div>
+    <main class="">
+      <!-- Slider Section -->
+      <section
+        class="mb-12 sm:px-12 md:px-14 relative lg:px-0 lg:wrapper lg:mt-8 lg:mb-16 3xl:mt-12"
+      >
+        <!-- Slider -->
+        <div class="swiper lg1:!z-auto">
+          <div class="swiper-wrapper !h-[280px] lg:!h-auto">
+            <!-- Slide N1 -->
+            <div class="swiper-slide sm:rounded-lg overflow-hidden">
+              <picture>
+                <source
+                  srcset="
+                    ./assets/images/SliderImages/Photo-13-webp.webp,
+                    ./assets/images/SliderImages/Photo-13.png
+                  "
+                  type="image/webp"
+                  media="(min-width: 1240px)"
+                />
+                <source
+                  srcset="
+                    ./assets/images/SliderImages/Photo-13-webp.webp,
+                    ./assets/images/SliderImages/Photo-13-min.png
+                  "
+                  type="image/webp"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="h-full w-full lg:h-auto lg:w-auto"
+                  src="./assets/images/SliderImages/Photo-13-min.png"
+                  alt="the night sky with stars above a mountain range"
+                />
+              </picture>
+            </div>
+            <!-- Slide N2 -->
+            <div class="swiper-slide sm:rounded-lg overflow-hidden">
+              <picture>
+                <source
+                  srcset="
+                    ./assets/images/SliderImages/Photo-16-webp.webp,
+                    ./assets/images/SliderImages/Photo-16.png
+                  "
+                  type="image/webp"
+                  media="(min-width: 1240px)"
+                />
+                <source
+                  srcset="
+                    ./assets/images/SliderImages/Photo-16-webp.webp,
+                    ./assets/images/SliderImages/Photo-16-min.png
+                  "
+                  type="image/webp"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="h-full w-full lg:h-auto lg:w-auto"
+                  src="./assets/images/SliderImages/Photo-16-min.png"
+                  alt="the night sky with stars above a mountain range"
+                />
+              </picture>
+            </div>
+            <!-- Slide N3 -->
+            <div class="swiper-slide sm:rounded-lg overflow-hidden">
+              <picture>
+                <source
+                  srcset="
+                    ./assets/images/SliderImages/Photo-14-webp.webp,
+                    ./assets/images/SliderImages/Photo-14.png
+                  "
+                  type="image/webp"
+                  media="(min-width: 1240px)"
+                />
+                <source
+                  srcset="
+                    ./assets/images/SliderImages/Photo-14-webp.webp,
+                    ./assets/images/SliderImages/Photo-14-min.png
+                  "
+                  type="image/webp"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="h-full w-full lg:h-auto lg:w-auto"
+                  src="./assets/images/SliderImages/Photo-14-min.png"
+                  alt="the night sky with stars above a mountain range"
+                />
+              </picture>
+            </div>
+            <!-- Slide N4 -->
+            <div class="swiper-slide sm:rounded-lg overflow-hidden">
+              <picture>
+                <source
+                  srcset="
+                    ./assets/images/SliderImages/Photo-15-webp.webp,
+                    ./assets/images/SliderImages/Photo-15.png
+                  "
+                  type="image/webp"
+                  media="(min-width: 1240px)"
+                />
+                <source
+                  srcset="
+                    ./assets/images/SliderImages/Photo-15-webp.webp,
+                    ./assets/images/SliderImages/Photo-15-min.png
+                  "
+                  type="image/webp"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="h-full w-full lg:h-auto lg:w-auto"
+                  src="./assets/images/SliderImages/Photo-15-min.png"
+                  alt="the night sky with stars above a mountain range"
+                />
+              </picture>
+            </div>
+          </div>
+          <!-- Slider buttons container -->
+          <div
+            class="absolute top-0 right-0 bottom-0 left-0 flex justify-between items-center px-4 bg-brand-gray-300 lg:bottom-auto lg:right-auto lg:justify-normal lg:gap-4 lg:z-50 lg:mt-6 lg:ml-6 lg:p-2 lg:rounded-lg1 lg1:bottom-0 lg1:left-0 lg1:right-auto lg1:top-auto lg1:mt-0 lg1:ml-12 lg1:mb-14 lg1:gap-3"
+          >
+            <button
+              class="swiper-button-prev !bg-white !w-8 !h-8 !flex !justify-center !items-center !rounded-lg !mt-0 !text-brand-gray-500 !static lg1:!bg-transparent lg1:!w-6 lg1:!h-6"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 12L14.689 19L17 16.8963L11.6199 12L17 7.10367L14.689 5L7 12Z"
+                  fill="#4A5468"
+                />
+              </svg>
+            </button>
+            <div
+              id="slide-count"
+              class="hidden lg:text-brand-headline-2 lg:block"
+            >
+              1/4
+            </div>
+            <button
+              class="swiper-button-next !bg-white !w-8 !h-8 !flex !justify-center !items-center !rounded-lg !mt-0 !text-brand-gray-500 !static lg1:!bg-transparent lg1:!w-6 lg1:!h-6"
+            >
+              <svg
+                class="rotate-180"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 12L14.689 19L17 16.8963L11.6199 12L17 7.10367L14.689 5L7 12Z"
+                  fill="#4A5468"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Slider content -->
+        <div
+          class="bg-white p-4 lg:rounded-lg1 lg:overflow-hidden lg:absolute lg:bottom-0 lg:left-0 lg:wrapper lg:p-6 lg:mx-6 lg:mb-6 lg:z-50 lg1:z-40 lg1:pt-8 lg1:pb-[104px] 3xl:w-[600px] 3xl:mr-0 3xl:pt-[29px] 3xl:pr-[23px] 3xl:pb-[101px]"
+        >
+          <p class="text-brand-footnote">
+            <span class="text-brand-footnote-semiBold text-brand-red-500"
+              >პოლიტიკა</span
+            >
+            • 18.03.2024
+          </p>
+          <h1
+            class="text-brand-headline-2 mt-2 lg:text-brand-headline-1 lg:mt-3"
+          >
+            ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების სამელიორაციო
+            ინფრასტრუქტურული პროექტები დაიწყება
+          </h1>
+        </div>
+      </section>
     </main>
   </body>
 </html>

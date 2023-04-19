@@ -33,6 +33,11 @@
   .wrapper {
     @apply mx-auto px-3 max-w-[328px] xs:px-0 lg:max-w-[928px] lg1:max-w-[1128px] 3xl:max-w-[1312px];
   }
+
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    content: "" !important;
+  }
 }
 
 @layer utilities {
